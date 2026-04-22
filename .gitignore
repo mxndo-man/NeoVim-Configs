@@ -1,0 +1,9 @@
+# Ignore plugin folders (Lazy/Packer will reinstall them)
+/lazy-lock.json
+/plugin/
+/lua/lazy-plugins/
+
+# Ignore swap and undo files
+*.swp
+*.swo
+undo/
