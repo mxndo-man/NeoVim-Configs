@@ -3,7 +3,7 @@ local options = {
         lua = { "stylua" },
         c = { "clang-format" },
         cpp = { "clang-format" },
-        go = { "gofumpt", "goimports-reviser", "golines" },
+        --go = { "gofumpt", "goimports-reviser", "golines" },
         haskell = { "fourmolu", "stylish-haskell" },
         python = { "isort", "black" },
     },
@@ -22,12 +22,12 @@ local options = {
             },
         },
         -- Golang
-        ["goimports-reviser"] = {
-            prepend_args = { "-rm-unused" },
-        },
-        golines = {
-            prepend_args = { "--max-len=80" },
-        },
+        --["goimports-reviser"] = {
+        --    prepend_args = { "-rm-unused" },
+        --},
+        --golines = {
+        --    prepend_args = { "--max-len=80" },
+        --},
         -- Lua
         stylua = {
             prepend_args = {

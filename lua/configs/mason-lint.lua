@@ -23,6 +23,24 @@ for _, v in pairs(lint.linters_by_ft) do
     end
 end
 
+for _, v in pairs(lint.linters_by_ft) do
+    -- Verify v is actually a table before trying to iterate over it
+    if type(v) == "table" then
+        for _, linter in ipairs(v) do
+            if
+                type(linter) == "string"
+                and not table_contains(ignore_install, linter)
+            then
+                table.insert(all_linters, linter)
+            end
+        end
+    elseif type(v) == "string" then
+        if not table_contains(ignore_install, v) then
+            table.insert(all_linters, v)
+        end
+    end
+end
+
 require("mason-nvim-lint").setup({
     ensure_installed = all_linters,
     automatic_installation = false,
