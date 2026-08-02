@@ -1,3 +1,4 @@
+
 ![Screenshot](nvchad-neovim.png)
 https://www.youtube.com/watch?v=TNRFegMqbWA
 # Installing NvChad Version 2.5
@@ -868,3 +869,4 @@ Add syntax highlighting for Haskell.
 ```lua
         "haskell",
 ```
+
