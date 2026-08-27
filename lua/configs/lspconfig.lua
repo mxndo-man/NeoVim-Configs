@@ -13,6 +13,7 @@ lspconfig.servers = {
     --"hls",
     --"ols",
     "pyright",
+    "sqlls",
 }
 
 -- list of servers configured with default config.
