@@ -77,4 +77,14 @@ return {
             vim.g.vimtex_compiler_method = "latexmk"
         end,
     },
+
+    {
+        "MeanderingProgrammer/render-markdown.nvim",
+        ft = { "markdown" },
+        dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
+        keys = {
+            { "<leader>mp", "<cmd>RenderMarkdown toggle<cr>", ft = "markdown", desc = "Markdown toggle render" },
+        },
+        opts = {},
+    },
 }
